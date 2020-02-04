@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Search</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="div_style" id="show_query">
+            <img src="./images/google.png" width="272" height="92" class="img_display" /><br>
+            <aside>
+                <form autocomplete='on'>
+                    <div class="form-group">
+                        <input id="search-field" type="text" class="form-control" name="movie-name"
+                            placeholder="Star Wars Character" required>
+                    </div>
+                    <button class="tfB0Bf" id="btnSearch">Find Character</button>
+
+                </form>
+            </aside>
+
+        </div>
+
+        <div id="search_result">
+            <div class="A8SBwf">
+                <div class="logo">
+                    <img src="./images/google.png" width="92" class="img_display" />
+                </div>
+
+                <div class="RNNXgb">
+                    <form autocomplete='on'>
+                        <div class="form-group">
+                            <input id="query-field" type="text" class="form-control" name="movie-name"
+                                placeholder="Star Wars Character" required>
+                        </div>
+                        <button class="tfB0Bf" id="btnQuery">Find Character</button>
+
+                    </form>
+                    </aside>
+                </div>
+                <div class="content"></div>
+            </div>
+
+        </div>
+        <script id="character-template" type="text/x-handlebars-template">
+        <div class="star-container">
+         <p><img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg" class="showImg"></p>
+          <div>
+            <h3>{{name}}</h3>
+            <p>height : {{height}} | Mass : {{mass}} | Skin Color : {{skin_color}} | Gender : {{gender}}</p>
+            </div>
+        </div>
+           
+      </script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+        <script src="./js/script.js"></script>
+</body>
+
+</html>
